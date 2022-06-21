@@ -26,28 +26,35 @@
     <header>
       <div class="container">
         <nav class="main-nav">
-          <a href="./index.html" class="nav-link-logo">Web<span class="partlogo">Studio</span></a>
+          <a href="./index.html" class="logo header__logo"
+            >Web<span class="logo__text">Studio</span></a
+          >
           <ul class="site-nav">
-            <li class="item">
-              <a class="link" href="./index.html" target="_self">Студия</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="./index.html" target="_self">Студия</a>
             </li>
-            <li class="item">
-              <a class="link current" href="./portfolio.html" target="_self">Портфолио</a>
+            <li class="site-nav__item">
+              <a
+                class="site-nav__link site-nav__link--active"
+                href="./portfolio.html"
+                target="_self"
+                >Портфолио</a
+              >
             </li>
-            <li class="item"><a class="link" href="">Контакты</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="">Контакты</a></li>
           </ul>
 
-          <ul class="auth-nav">
-            <li class="item">
-              <a class="link" href="mailto:info@devstudio.com"
-                ><svg class="envelope" width="16" height="12">
+          <ul class="contact-nav">
+            <li class="contact-nav__item">
+              <a class="contact-nav__link" href="mailto:info@devstudio.com"
+                ><svg class="contact-nav__icon" width="16" height="12">
                   <use href="./images/icons.svg#icon-envelope"></use></svg
                 >info@devstudio.com</a
               >
             </li>
-            <li class="item">
-              <a class="link" href="tel:+380961111111"
-                ><svg class="envelope" width="10" height="16">
+            <li class="contact-nav__item">
+              <a class="contact-nav__link" href="tel:+380961111111"
+                ><svg class="contact-nav__icon" width="10" height="16">
                   <use href="./images/icons.svg#icon-smartphone"></use></svg
                 >+38 096 111 11 11</a
               >
@@ -326,7 +333,9 @@
     <footer class="footer">
       <div class="container">
         <div class="address-footer">
-          <a class="logo-footer" href="./index.html">Web<span class="footerlogo">Studio</span></a>
+          <a class="logo address-footer__logo" href="./index.html"
+            >Web<span class="logo__text logo__text--enverse">Studio</span></a
+          >
           <address>
             <ul>
               <li>
