@@ -1,9 +1,13 @@
+@import './utils/vars';
 @import './base/reset';
+@import './base/common';
+@import './utils/hidden';
+
 @import './components/container';
-@import './utils/variables';
+
 @import './layout/header';
 @import './layout/hero';
-@import './layout/section-block';
+@import './layout/section-benefits';
 @import './layout/section-portfolio';
 @import './layout/section-command';
 @import './layout/section-client';

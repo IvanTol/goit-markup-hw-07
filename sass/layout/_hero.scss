@@ -82,7 +82,7 @@
 .modal {
   position: absolute;
 
-  background: #ffffff;
+  background: var(--primary-white-color);
 
   padding: 40px;
 
@@ -134,7 +134,7 @@
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
 
-  background: #fff;
+  background: var(--primary-white-color);
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -142,7 +142,7 @@
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
-  background: #fff;
+  background: var(--primary-white-color);
 }
 
 .modal-close-btn:hover .icon-close,

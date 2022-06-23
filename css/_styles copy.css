@@ -299,7 +299,7 @@ header {
 .modal {
   position: absolute;
 
-  background: #ffffff;
+  background: var(--primary-white-color);
 
   padding: 40px;
 
@@ -614,13 +614,7 @@ header {
   padding-bottom: 94px;
 }
 
-.vizually-hidden {
-  clip: rect(0 0 0 0);
 
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
 
 .main-item {
   display: flex;

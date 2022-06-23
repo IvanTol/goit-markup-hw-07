@@ -41,7 +41,7 @@
     padding-top: 30px;
     padding-bottom: 30px;
   
-    background-color: #ffffff;
+    background-color: var(--primary-white-color);
   }
   
   .command__name {
@@ -95,7 +95,7 @@
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: var(--primary-white-color);
   
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -112,5 +112,5 @@
   
   .socials__link:hover .socials__icon,
   .socials__link:focus .socials__icon {
-    fill: #ffffff;
+    fill: var(--primary-white-color);
   }
