@@ -2,15 +2,15 @@
 @import './base/reset';
 @import './base/common';
 @import './utils/hidden';
-
 @import './components/container';
-
 @import './layout/header';
 @import './layout/hero';
+@import './layout/hero-title';
 @import './layout/section-benefits';
 @import './layout/section-portfolio';
 @import './layout/section-command';
 @import './layout/section-client';
 @import './layout/footer';
-
-@import './layout/portfolio';
+@import './layout/portfolio-main-workin';
+@import './layout/portfolio-btn-filter';
+@import './layout/portfolio-block-work';

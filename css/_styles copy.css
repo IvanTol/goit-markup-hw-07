@@ -22,7 +22,6 @@
   --address-text-color: #ffffff;
 }
 
-
 p,
 h1,
 h2,
@@ -68,7 +67,6 @@ body {
 
   width: 1200px;
 }
-
 
 /* -----HEADER----- */
 
@@ -614,8 +612,6 @@ header {
   padding-bottom: 94px;
 }
 
-
-
 .main-item {
   display: flex;
 }
@@ -1136,6 +1132,13 @@ header {
   display: none;
 }
 
+.workin {
+  background-color: var(--primary-white-color);
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .block-filter {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -1176,13 +1179,6 @@ header {
 }
 
 /* FILTER */
-
-.workin {
-  background-color: var(--primary-white-color);
-
-  margin-left: auto;
-  margin-right: auto;
-}
 
 /* .filter-flex {
   margin-right: 8px;
