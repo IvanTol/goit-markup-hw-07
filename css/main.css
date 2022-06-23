@@ -83,12 +83,6 @@ body {
   font-size: 26px;
   line-height: 1.19;
 }
-
-.logo:hover,
-.logo:focus {
-  color: var(--accent-color);
-}
-
 .logo__text {
   color: var(--primary-text-color);
   font-family: Raleway, sans-serif;
@@ -101,9 +95,13 @@ body {
   display: flex;
   margin-left: auto;
 }
-
 .contact-nav__item + .contact-nav__item {
   margin-left: 50px;
+}
+.contact-nav__icon {
+  margin-right: 10px;
+  fill: currentColor;
+  align-items: baseline;
 }
 
 .contact-nav__link {
@@ -116,16 +114,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-
-.contact-nav__link:hover,
-.contact-nav__link:focus {
+.contact-nav__link:hover, .contact-nav__link:focus {
   color: var(--accent-color);
-}
-
-.contact-nav__icon {
-  margin-right: 10px;
-  fill: currentColor;
-  align-items: baseline;
 }
 
 .text-hero {
@@ -432,9 +422,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.hero-button:hover,
-.hero-button:focus {
+.hero-button:hover, .hero-button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -450,12 +438,10 @@ body {
   width: 44px;
   height: 44px;
 }
-
 .socials--list {
   margin-right: 10px;
 }
-
-.socials:last-child {
+.socials--list:last-child {
   margin-right: 0;
 }
 
@@ -470,19 +456,19 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.socials__link:hover,
-.socials__link:focus {
+.socials__link:hover, .socials__link:focus {
   background-color: var(--accent-color);
+}
+.socials__link:hover .socials__icon, .socials__link:focus .socials__icon {
+  fill: var(--primary-white-color);
 }
 
 .socials__icon {
   fill: #afb1b8;
 }
 
-.socials__link:hover .socials__icon,
-.socials__link:focus .socials__icon {
-  fill: var(--primary-white-color);
+.logo__footer {
+  margin-bottom: 20px;
 }
 
 .logo__text--enverse {
@@ -491,11 +477,6 @@ body {
 
 .address-footer {
   margin-bottom: 20px;
-}
-
-.address-footer:hover,
-.address-footer:focus {
-  color: var(--accent-color);
 }
 
 .link-location.aside-link {
