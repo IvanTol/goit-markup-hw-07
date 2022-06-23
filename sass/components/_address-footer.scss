@@ -1,0 +1,39 @@
+.address-footer {
+    margin-bottom: 20px;
+  }
+  
+  .address-footer:hover,
+  .address-footer:focus {
+    color: var(--accent-color);
+  }
+  
+  .link-location.aside-link {
+    display: inline-block;
+    text-decoration: none;
+  
+    margin-bottom: 9px;
+  
+    color: var(--address-text-color);
+  
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+  }
+  
+  .link-footer {
+    display: inline-block;
+  
+    color: var(--footer-link-color);
+  
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+  }
+  
+  .link-footer.mail {
+    margin-bottom: 9px;
+  }

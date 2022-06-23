@@ -1,16 +1,29 @@
 @import './utils/vars';
+@import './utils/hidden';
+
 @import './base/reset';
 @import './base/common';
-@import './utils/hidden';
+
 @import './components/container';
+@import './components/logo-header';
+@import './components/contact-header';
+@import './components/hero-title';
+@import './components/modal';
+@import './components/btn-hero';
+@import './components/command-socials';
+@import './components/logo-footer';
+@import './components/address-footer';
+@import './components/network-footer';
+@import './components/subscribe-footer';
+
 @import './layout/header';
 @import './layout/hero';
-@import './layout/hero-title';
 @import './layout/section-benefits';
-@import './layout/section-portfolio';
+@import './layout/section-gallery';
 @import './layout/section-command';
 @import './layout/section-client';
 @import './layout/footer';
+
 @import './layout/portfolio-main-workin';
 @import './layout/portfolio-btn-filter';
 @import './layout/portfolio-block-work';
