@@ -11,36 +11,40 @@
 /* margin-right: 30px;
   margin-bottom: 30px; */
 
+.portfolio-link {
+  display: block;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
 .flex-conteiner {
   flex-basis: calc(100% / 3 - 30px);
 
   margin-left: 30px;
   margin-bottom: 30px;
-}
 
-.portfolio-link {
-  display: block;
-  cursor: pointer;
-}
+  &:hover .submenu-portfolio,
+  &:focus .submenu-portfolio {
+    opacity: 1;
+  }
 
-.portfolio-link:hover,
-.portfolio-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.flex-conteiner:hover .submenu-portfolio,
-.flex-conteiner:focus .submenu-portfolio {
-  opacity: 1;
-}
-
-.flex-conteiner:hover .product-overlay {
-  transform: translateY(0);
+  &:hover .product-overlay {
+    transform: translateY(0);
+  }
 }
 
 .product-description {
   position: relative;
   overflow: hidden;
+
+  &:hover::before {
+    opacity: 1;
+  }
 }
 
 /* .product-description::before {
@@ -75,10 +79,6 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.product-description:hover::before {
-  opacity: 1;
-}
-
 /* .flex-conteiner:hover .product-description::before {
   transform: translateY(0);
 } */
@@ -94,16 +94,16 @@
   list-style: none;
 
   transform: translate(-50%, -50%);
-}
 
-.text-portfolio {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.55;
-  letter-spacing: 0.03em;
-  text-align: left;
+  & .text-portfolio {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    text-align: left;
 
-  color: var(--address-text-color);
+    color: var(--address-text-color);
+  }
 }
 
 .work-card {
@@ -112,23 +112,23 @@
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
-}
 
-.section-title-work {
-  margin-bottom: 4px;
+  & .section-title-work {
+    margin-bottom: 4px;
 
-  color: var(--primary-text-color);
+    color: var(--primary-text-color);
 
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
 
-.block-work .subtitle-work {
-  color: var(--title-text-color);
+  & .subtitle-work {
+    color: var(--title-text-color);
 
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.03em;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+  }
 }

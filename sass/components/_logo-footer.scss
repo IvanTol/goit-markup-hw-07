@@ -1,7 +1,8 @@
 .logo__footer {
+  display: block;
   margin-bottom: 20px;
-}
 
-.logo__text--enverse {
-  color: #fff;
+  & .logo__text--enverse {
+    color: #fff;
+  }
 }

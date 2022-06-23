@@ -1,11 +1,11 @@
 .section-client {
     padding-bottom: 94px;
     padding-top: 94px;
-  }
-  
-  .clients-logo {
-    display: flex;
-    justify-content: space-between;
+
+    & .clients-logo {
+      display: flex;
+      justify-content: space-between;
+    }
   }
   
   .clients-logo__link {
@@ -23,10 +23,10 @@
   
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .clients-logo__link:hover,
-  .clients-logo__link:focus {
-    border: 1px solid var(--accent-color);
-    fill: var(--accent-color);
+
+    &:hover,
+    &:focus {
+      border: 1px solid var(--accent-color);
+      fill: var(--accent-color);
+    }
   }
