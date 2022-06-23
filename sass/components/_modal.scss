@@ -234,6 +234,17 @@
   & .link-modal {
     color: var(--accent-color);
   }
+
+  & .icon-check {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+  
+    background-color: white;
+  }
 }
 
 .checkbox {
@@ -262,16 +273,6 @@
 
 }
 
-.icon-check {
-  content: '';
-  display: block;
-  width: 15px;
-  height: 15px;
-  border: 2px solid #212121;
-  border-radius: 2px;
-
-  background-color: white;
-}
 
 /* КНОПКА ФОРМЫ */
 

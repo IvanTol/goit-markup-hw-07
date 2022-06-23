@@ -2,6 +2,17 @@
     padding-bottom: 94px;
     padding-top: 94px;
 
+
+    & .title-client {
+      margin-bottom: 50px;
+    
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.17;
+      text-align: center;
+      letter-spacing: 0.03em;
+    }
+
     & .clients-logo {
       display: flex;
       justify-content: space-between;
@@ -30,3 +41,4 @@
       fill: var(--accent-color);
     }
   }
+
