@@ -9,9 +9,7 @@
 .text-footer {
   display: block;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(700, 14px, 1.14);
 
   margin: 0px;
   margin-bottom: 20px;
@@ -21,11 +19,9 @@
   color: var(--primary-white-color);
 }
 
-
 .link-network-footer {
-  display: flex;
+  @include align-list;
   justify-content: center;
-  align-items: center;
 
   margin-left: 10px;
 

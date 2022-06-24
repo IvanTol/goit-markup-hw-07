@@ -17,6 +17,9 @@
 }
 
 .link-footer {
+  @include font(400, 14px, 1.7);
+  letter-spacing: 0.03em;
+
   display: inline-block;
 
   margin-bottom: 9px;
@@ -25,10 +28,6 @@
 
   text-decoration: none;
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
 
   &:last-child {
     margin-bottom: 0px;

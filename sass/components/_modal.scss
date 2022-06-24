@@ -48,9 +48,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   & .modal-title {
-    font-weight: 700;
-    font-size: 20px;
-    letter-spacing: 0.03em;
+    @include font(700, 20px);
 
     color: var(--primary-text-color);
 
@@ -59,15 +57,13 @@
 }
 
 .modal-close-btn {
-  display: flex;
+  @include align-list;
+  justify-content: center;
 
   position: absolute;
 
   top: 8px;
   right: 8px;
-
-  justify-content: center;
-  align-items: center;
   padding: 9px;
 
   border-radius: 50%;
@@ -102,11 +98,10 @@
 }
 
 .modal-field input {
-  width: 100%;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(400, 14px, 1.14);
   letter-spacing: 0.01em;
+
+  width: 100%;
 
   margin: auto;
   height: 40px;
@@ -124,17 +119,15 @@
   }
 }
 
-
 /* .modal-field input:hover,
   .modal-field input:focus {
   } */
 
 .modal-field label {
-  margin-bottom: 4px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
+  @include font(400, 12px, 1.17);
   letter-spacing: 0.01em;
+
+  margin-bottom: 4px;
 
   color: var(--title-text-color);
 }
@@ -168,7 +161,6 @@
   border-radius: 4px;
 }
 
-
 .modal-text:focus,
 .modal-text:hover {
   border: 1px solid var(--accent-color);
@@ -177,9 +169,7 @@
 }
 
 .modal-field textarea {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(400, 14px, 1.14);
   letter-spacing: 0.01em;
 
   width: 100%;
@@ -197,9 +187,7 @@
 .modal-field textarea::placeholder {
   padding-top: 5px;
 
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17px;
+  @include font(400, 12px, 1.17);
   letter-spacing: 0.01em;
 
   color: rgba(117, 117, 117, 0.5);
@@ -218,16 +206,13 @@
 }
 
 .checkbox-label {
-  display: flex;
-  align-items: center;
+  @include align-list;
   justify-content: space-evenly;
 
-  margin-bottom: 30px;
+  @include font(400, 14px, 1.71);
 
+  margin-bottom: 30px;
   text-align: center;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
 
   color: var(--title-text-color);
 
@@ -242,7 +227,7 @@
     height: 15px;
     border: 2px solid #212121;
     border-radius: 2px;
-  
+
     background-color: white;
   }
 }
@@ -270,14 +255,14 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-
 }
-
 
 /* КНОПКА ФОРМЫ */
 
 .button-form {
-  display: flex;
+  @extend .button;
+  @include align-list;
+  justify-content: center;
 
   min-width: 200px;
   height: 50px;
@@ -285,19 +270,8 @@
   padding: 0;
   margin: 0 auto;
 
-  justify-content: center;
-  align-items: center;
-
   color: var(--hero-text-color);
   background-color: var(--accent-color);
-
-  font-family: Roboto, sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  border: none;
-  border-radius: 4px;
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

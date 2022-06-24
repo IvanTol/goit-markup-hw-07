@@ -10,7 +10,6 @@
   }
 }
 
-
 .main-item__list {
   width: 270px;
   margin: 0 15px;
@@ -18,17 +17,16 @@
   &::before {
     display: block;
     content: '';
-  
+
     height: 120px;
-  
+
     margin-bottom: 30px;
-  
+
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #f5f4fa;
   }
-  
 
   &:last-child {
     margin-right: 0;
@@ -58,16 +56,13 @@
   background-size: 55px 61px;
 }
 
-
-
 .main-item__title {
   margin-bottom: 10px;
 
-  font-weight: 700;
-  font-size: 14px;
-  height: 14px;
-  line-height: 1.14;
+  @include font(700, 14px, 1.14);
   letter-spacing: 0.03em;
+
+  height: 14px;
   text-transform: uppercase;
 }
 

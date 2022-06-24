@@ -96,9 +96,8 @@
   transform: translate(-50%, -50%);
 
   & .text-portfolio {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.55;
+    @include font(400, 18px, 1.55);
+
     letter-spacing: 0.03em;
     text-align: left;
 
@@ -118,9 +117,7 @@
 
     color: var(--primary-text-color);
 
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
+    @include font(700, 18px, 2);
     letter-spacing: 0.06em;
   }
 
